@@ -1,0 +1,51 @@
+/* Zero elements */
+* {
+	padding: 0px;
+	margin: 0px;
+	
+}
+
+/* + */
+
+
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index:-1;
+  }
+
+
+  .menu-link {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 19.5%;
+    margin-right: 0.625%;
+    text-align: center;
+    line-height: 3;
+    color: black;
+  }
+  
+  .menu-list-item:last-child a {
+    margin-right: 0;
+  }
+  
+  .menu-link:link, .menu-link:visited, .menu-link:focus {
+    background: yellow;
+  }
+  
+  .menu-link:hover {
+    background: orange;
+  }
+  
+  .menu-link:active {
+    background: red;
+    color: white;
+  }
